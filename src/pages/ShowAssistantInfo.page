@@ -1,0 +1,9 @@
+<apex:page standardController="Contact" title="Assistant info">
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Contact" fields="Id,Name,Phone"/>
+    </apex:remoteObjects>
+    <p>{!Contact.AssistantName}</p>
+    <p>Call <a href="tel:{!Contact.AssistantPhone}">{!Contact.AssistantPhone}</a></p>
+</apex:page>
+
+<!--  &id=00336000009flzD  -->

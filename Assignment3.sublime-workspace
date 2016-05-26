@@ -1,0 +1,375 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"password__c"
+			],
+			[
+				"Us",
+				"username__c"
+			],
+			[
+				"la",
+				"LastName"
+			],
+			[
+				"to",
+				"PUBLIC toString() 	String"
+			],
+			[
+				"ge",
+				"PUBLIC generateDigest(String algorithmName, Blob input) 	Blob"
+			],
+			[
+				"Assi",
+				"AssignmentContactCRUDController	[Custom Apex Class]"
+			],
+			[
+				"u",
+				"username__c"
+			],
+			[
+				"que",
+				"query"
+			],
+			[
+				"Dat",
+				"Database	[Standard Apex Class]"
+			],
+			[
+				"res",
+				"GetUpdatedResult"
+			],
+			[
+				"E",
+				"Exception	[Standard Apex Class]"
+			],
+			[
+				"li",
+				"listUsers"
+			],
+			[
+				"id",
+				"contactId"
+			],
+			[
+				"conta",
+				"contactId"
+			],
+			[
+				"l",
+				"lastName"
+			],
+			[
+				"na",
+				"firstName"
+			],
+			[
+				"con",
+				"Contact"
+			],
+			[
+				"i",
+				"Id"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"an",
+				"angular"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/classes/AssignmentAuthenticationUtils.cls",
+			"settings":
+			{
+				"buffer_size": 2124,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 69.0,
+		"history":
+		[
+			"Package Control",
+			"Package Control: Install Package",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Natalia Larrieux/Documents/Assignment3",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes"
+	],
+	"file_history":
+	[
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentContactCRUDController.cls",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories/SalesforceContactCRUD.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentContactCRUDControllerExtension.cls",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/createController.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/editController.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/homeController.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/loginController.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories/SalesforceAuthentication.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentMainController.cls",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentAuthenticationUtils.cls",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/NewCaseListController.cls",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/EmailManager.cls",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AccountProcessor.cls",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AccountManager.cls",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/pages/home.html",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/services/helperService.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories/someFactory.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/app.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/services/SalesforceContactCRUD.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/my-directive.html",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentAuthenticationUtils.cls-meta.xml",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/pages/AssignmentIndex.page",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/README.md",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/Gruntfile.js",
+		"/C/Users/Natalia Larrieux/Downloads/angular-boilerplate-archivos-modificados-assignment/Gruntfile.js",
+		"/C/Users/Natalia Larrieux/Downloads/angular-boilerplate-archivos-modificados-assignment/README.md",
+		"/C/Users/Natalia Larrieux/Downloads/angular-boilerplate-sin-ruby/Gruntfile.js",
+		"/C/Users/Natalia Larrieux/Downloads/angular-boilerplate-sin-ruby/README.md",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/myExampleAppMain.page",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/styles/assignmentStyle.css",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/styles/main.css",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/styles/sass/styles.scss",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/bower.json",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/main.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/AssignmentIndex_conFixes.page",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/myExampleAppMain.page",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/staticresources/angular-boilerplate.resource",
+		"/C/Users/Natalia Larrieux/Documents/Assignment/assets/js/modules/app.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment2/Gruntfile.js",
+		"/C/Users/Natalia Larrieux/Documents/angular-boilerplate/bower.json",
+		"/C/Users/Natalia Larrieux/Documents/Assignment2/src/pages/AssignmentIndex.page",
+		"/C/Users/Natalia Larrieux/Documents/Assignment2/src/pages/acc.page",
+		"/C/Users/Natalia Larrieux/Documents/Assignment/src/pages/AssignmentIndex.page",
+		"/C/Users/Natalia Larrieux/Documents/angular_boilerplate/assets/templates/pages/home.html",
+		"/C/Users/Natalia Larrieux/Documents/angular_boilerplate/assets/js/modules/app.js",
+		"/C/Users/Natalia Larrieux/Documents/angular_boilerplate/assets/js/modules/factories/someFactory.js",
+		"/C/Users/Natalia Larrieux/Documents/angular_boilerplate/assets/js/modules/directives/myDirective.js",
+		"/C/Users/Natalia Larrieux/Documents/angular_boilerplate/assets/js/modules/controllers/homeController.js",
+		"/C/Users/Natalia Larrieux/Documents/angular_boilerplate/assets/templates/templates.js",
+		"/C/Users/Natalia Larrieux/Documents/angular_boilerplate/assets/js/modules/controllers.js",
+		"/C/Users/Natalia Larrieux/Documents/angular_boilerplate/app.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\Natalia Larrieux\\Documents\\Assignment3\\src\\classes",
+			"C:\\Users\\Natalia Larrieux\\Documents\\Assignment3\\angular-boilerplate\\assets\\js\\modules",
+			"C:\\Users\\Natalia Larrieux\\Documents\\Assignment3\\angular-boilerplate\\assets"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"editContact",
+			"blob",
+			"Blob",
+			"result",
+			"deferred",
+			"list<contact>",
+			"styles",
+			"app_statics",
+			"full",
+			"build-full",
+			"build"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/classes/AssignmentAuthenticationUtils.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1138,
+								1138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MavensMate-OutputPanel":
+	{
+		"height": 199.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Assignment3.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 337.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

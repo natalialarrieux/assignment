@@ -1,0 +1,431 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "ctrl", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 38, 
+                "line": 4
+            }, 
+            "type": "AssignmentMainController"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "AssignmentContactCRUDControllerExtension", 
+            "parameters": [
+                {
+                    "type": "AssignmentMainController", 
+                    "name": "parentCtrl"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 12, 
+                "line": 6
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "AssignmentContactCRUDControllerExtension", 
+    "tableDeclaration": {
+        "type": "AssignmentContactCRUDControllerExtension", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 2
+        }, 
+        "name": "AssignmentContactCRUDControllerExtension"
+    }, 
+    "key": "01p3600000C2rgLAAR", 
+    "variables": [
+        {
+            "type": "AssignmentMainController", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 78, 
+                "line": 6
+            }, 
+            "name": "parentCtrl"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 40, 
+                "line": 11
+            }, 
+            "name": "firstName"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 58, 
+                "line": 11
+            }, 
+            "name": "lastName"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 75, 
+                "line": 11
+            }, 
+            "name": "username"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 92, 
+                "line": 11
+            }, 
+            "name": "token"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 6, 
+                "line": 13
+            }, 
+            "name": "ret"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 39, 
+                "line": 23
+            }, 
+            "name": "contactId"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 57, 
+                "line": 23
+            }, 
+            "name": "firstName"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 75, 
+                "line": 23
+            }, 
+            "name": "lastName"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 92, 
+                "line": 23
+            }, 
+            "name": "username"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 109, 
+                "line": 23
+            }, 
+            "name": "token"
+        }, 
+        {
+            "type": "Boolean", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 11, 
+                "line": 25
+            }, 
+            "name": "ret"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 35
+            }, 
+            "name": "contactId"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 59, 
+                "line": 35
+            }, 
+            "name": "username"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 76, 
+                "line": 35
+            }, 
+            "name": "token"
+        }, 
+        {
+            "type": "Boolean", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 11, 
+                "line": 37
+            }, 
+            "name": "ret"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 47, 
+                "line": 47
+            }, 
+            "name": "username"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 64, 
+                "line": 47
+            }, 
+            "name": "token"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 49
+            }, 
+            "name": "ret"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 59
+            }, 
+            "name": "username"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 58, 
+                "line": 59
+            }, 
+            "name": "token"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 13, 
+                "line": 61
+            }, 
+            "name": "ret"
+        }
+    ], 
+    "id": "01p3600000C2rgLAAR", 
+    "methods": [
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "createContact", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "firstName"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "lastName"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "username"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "token"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 11
+            }, 
+            "returnType": "Id", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "editContact", 
+            "parameters": [
+                {
+                    "type": "Id", 
+                    "name": "contactId"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "firstName"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "lastName"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "username"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "token"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 23
+            }, 
+            "returnType": "Boolean", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "deleteContact", 
+            "parameters": [
+                {
+                    "type": "Id", 
+                    "name": "contactId"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "username"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "token"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 35
+            }, 
+            "returnType": "Boolean", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "listUsers", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "username"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "token"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 30, 
+                "line": 47
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "elTexto", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "username"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "token"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 59
+            }, 
+            "returnType": "String", 
+            "type": null
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+<apex:page standardController="Opportunity">
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Opportunity" fields="Id,StageName"/>
+    </apex:remoteObjects>
+    <p id="cont">
+        
+    </p>
+    <script>
+        var opportunityId = "{!Opportunity.Id}";
+    	var cont = document.getElementById("cont");
+    	cont.innerHTML = "Vacio";
+    //   var opportunity = new SObjectModel.Opportunity();
+    //El siguiente if no se está ejecutando porque
+    //no sé con qué comparar el stagename, si es 
+    //string o enum, o lo que sea
+    //    if (opportunity.StageName == "Prospecting"){
+    //  	cont.innerHTML = "Prospecting tip";
+    //  } else {
+    //      cont.innerHTML = "Salgo";
+    //  }
+    
+        var opportunity = opportunity.retrieve([{!Opportunity.Id}], 
+            function(error, records) {
+                if (error) {
+                    alert(error.message);
+                } else {
+                    if (opportunity.StageName == "Prospecting"){
+                    cont.innerHTML = "Prospecting tip";
+                    } else {
+                      cont.innerHTML = "Salgo";
+                    }
+                }
+            }
+                                               );
+    
+            
+    
+    </script>
+</apex:page>
+
+
+<!--  &id=006360000067tXq  -->
+<!--  &id=006360000067tXl  prospecting  -->

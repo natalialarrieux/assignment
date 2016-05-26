@@ -1,0 +1,12 @@
+<apex:page sidebar="false" title="Info del user">
+        
+        <apex:pageBlock title="Edit Contact">
+            <apex:pageBlockSection columns="1">
+                ({! IF($User.isActive, $User.Username, 'inactive') })
+                <p>Is it true?  {! CONTAINS('salesforce.com', 'force.com') }</p>
+                <p>Tomorrow will be day number  {! DAY(TODAY() + 1) }</p>
+            </apex:pageBlockSection>
+		</apex:pageBlock>
+
+    
+</apex:page>

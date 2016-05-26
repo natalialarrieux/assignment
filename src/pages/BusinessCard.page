@@ -1,0 +1,31 @@
+<apex:page >
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Account" fields="Name,Phone"/>
+    </apex:remoteObjects>
+    <div id="cont" class="mypage">
+        <p id="nom"></p>
+        <p id="ema"></p>
+        <p id="pho"></p>
+        <p id="tit"></p>
+    </div>
+        <input type="text" id="dest"/>
+    <script>
+    var nom = document.getElementById("nom");
+    var ema = document.getElementById("ema");
+    var pho = document.getElementById("pho");
+    var tit = document.getElementById("tit");
+    var dest = document.getElementById("dest");
+    var usuario = new SObjectModel.Account();
+        usuario.retrieve (
+      {limit:1}, function(error, records){
+      	if (error) {
+          	alert(error.message);
+          } else {
+                nom.innerHTML = record.get(Name);
+              //	ema.innerHTML = record.get(Email);
+    			pho.innerHTML = record.get(Phone);
+    			tit.innerHTML = record.get(Title);
+                      }
+                }
+                </script>
+</apex:page>

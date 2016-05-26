@@ -1,0 +1,16 @@
+{
+  "name": "angular-boilerplate",
+  "description": "",
+  "version": "0.0.1",
+  "homepage": "",
+  "license": "Not specified",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "jquery": "~2.1.1",
+    "bootstrap": "3.3.6",
+    "angular-bootstrap": "~0.14.3",
+    "angular-route": "1.4.x"
+  }
+}

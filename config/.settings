@@ -1,0 +1,19 @@
+{
+    "username": "natalia.larrieux@modelit.xyz", 
+    "environment": "developer", 
+    "project_name": "Assignment3", 
+    "workspace": "C:/Users/Natalia Larrieux/Documents", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "DV5CF5QV2GC51KRHCO7D8XQ1C7J7A32T", 
+    "metadata_container": "1dc36000000EyWtAAK", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "StaticResource", 
+        "CustomObject", 
+        "Profile"
+    ]
+}
