@@ -88,11 +88,46 @@
 	"buffers":
 	[
 		{
-			"file": "src/classes/AssignmentAuthenticationUtils.cls",
+			"contents": "(function() {\n\n    ////////////////////////////////////////////////////////////\n    // App\n    ////////////////////////////////////////////////////////////\n\n\n    var App = angular.module('AngularBoilerplate', ['ngRoute', 'ui.bootstrap', 'Controllers', 'Directives', 'Factories', 'Filters', 'Services']);\n\n    App.config(['$routeProvider', function ($routeProvider) {\n\n        var token = \"\";\n        \n        $routeProvider.when('/', {\n            templateUrl: 'assets/templates/pages/home.html',\n            controller: 'HomeController'\n        })\n\n\n\n        .otherwise({redirectTo: '/'});\n\n    }]);\n\n})();\n",
+			"file": "angular-boilerplate/assets/js/modules/app.js",
+			"file_size": 598,
+			"file_write_time": 131085950603560060,
 			"settings":
 			{
-				"buffer_size": 2124,
+				"buffer_size": 608,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "angular-boilerplate/assets/js/modules/controllers/loginController.js",
+			"settings":
+			{
+				"buffer_size": 490,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "myExampleAppMain.page",
+			"settings":
+			{
+				"buffer_size": 5570,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "angular-boilerplate/assets/templates/offcanvas.css",
+			"settings":
+			{
+				"buffer_size": 990,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "angular-boilerplate/assets/templates/mainindex.html",
+			"settings":
+			{
+				"buffer_size": 5946,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -142,15 +177,15 @@
 		"/C/Users/Natalia Larrieux/Documents/Assignment3",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/src",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes"
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/styles",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates"
 	],
 	"file_history":
 	[
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/pinegrow.json",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/templates.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentAuthenticationUtils.cls",
+		"/C/Users/Natalia Larrieux/Downloads/repo-gitignore/gitignore/Global/README.md",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentContactCRUDController.cls",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories/SalesforceContactCRUD.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentContactCRUDControllerExtension.cls",
@@ -160,7 +195,6 @@
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/loginController.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories/SalesforceAuthentication.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentMainController.cls",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentAuthenticationUtils.cls",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/NewCaseListController.cls",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/EmailManager.cls",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AccountProcessor.cls",
@@ -251,36 +285,155 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/classes/AssignmentAuthenticationUtils.cls",
+					"file": "angular-boilerplate/assets/js/modules/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2124,
+						"buffer_size": 608,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1138,
-								1138
+								400,
+								400
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "angular-boilerplate/assets/js/modules/controllers/loginController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "myExampleAppMain.page",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2516,
+								2516
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "angular-boilerplate/assets/templates/offcanvas.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 990,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "angular-boilerplate/assets/templates/mainindex.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								912,
+								5937
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1256.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

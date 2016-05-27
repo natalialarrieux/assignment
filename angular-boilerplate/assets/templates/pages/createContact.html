@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="contact" class="form-container">
+                    <fieldset>
+                        <div class="alert alert-danger"> 
+                            <strong>Well done!</strong> You successfully read this important alert message.        
+                        </div>
+                        <div id="message"></div>
+                        <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
+                            <div class="form-group">
+                                <input name="first name" id="fName" type="text" value="" placeholder="First name" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <input id="lName" type="text" value="" placeholder="Last name" class="form-control" name="last name" />
+                            </div>
+                            <div class="form-group">
+                                <input name="phone" id="phone" type="text" value="" placeholder="Phone" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit" id="btnCreate" name="create contact">Create contact!</button>
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+                <!-- /.form-container -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+</html>
