@@ -1,41 +1,24 @@
-<div id="ng-view">
-    <div class="row row-offcanvas row-offcanvas-right">
-        <div>
-            <div class="col-xs-12 col-sm-9">
-                <div class="row">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>First name</th>
-                                <th>Last name</th>
-                                <th>Company name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr id="directive-and-ng-click">
-                                <td>Lorem</td>
-                                <td>ipsum</td>
-                                <td>dolor</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!--/row-->
+<div class="row row-offcanvas row-offcanvas-right">
+    <div>
+        <div class="col-xs-12 col-sm-9">
+            <div class="row">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Company name</th>
+                        </tr>
+                    </thead>
+                    <tbody><!-- ng-repeat-->
+                        <ng-table-row></ng-table-row>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div class="col-sm-3">
-            <div id="directive">
-                <h2>Nombre completo</h2>
-                <p class="lead">Company name</p>
-                <p>Phone Username Password</p>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-offset-3 col-sm-6">
-                        <a href="#" class="btn btn-block btn-primary">Edit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/.col-xs-12.col-sm-9-->
-        <!--/.sidebar-offcanvas-->
+    </div>
+    <div class="col-sm-3">
+        <!-- PENDIENTE BINDING -->
+        <show-contact name="name" company="company" phone="phone" username="username" id="id"></show-contact>
     </div>
 </div>

@@ -51,6 +51,15 @@ bh_unicode_properties.cache
 GitHub.sublime-settings
 
 
+############ PINEGROW
+
+#Pinegrow backup files
+_pgbackup/*
+
+#Pinegrow setting file
+pinegrow.json
+
+
 ############ NODE
 
 # Logs

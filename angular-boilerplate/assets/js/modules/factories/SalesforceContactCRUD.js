@@ -1,5 +1,5 @@
 angular.module('Factories').factory('SalesforceContactCRUD', ['$q',
- function SalesforceContactCRUDFactory($q){
+ function SalesforceContactCRUDFactory($q, $rootScope, HelperService, $filter){
 
  	return {
  		createContact: function(username, password){
@@ -12,7 +12,7 @@ angular.module('Factories').factory('SalesforceContactCRUD', ['$q',
 						deferred.reject(event);
 					}
 				},
-				{buffer: false, escape: false, timeout: 30000;}
+				{buffer: false, escape: false, timeout: 30000}
 			);
 			return deferred.promise;
 		},
@@ -27,7 +27,7 @@ angular.module('Factories').factory('SalesforceContactCRUD', ['$q',
 						deferred.reject(event);
 					}
 				},
-				{buffer: false, escape: false, timeout: 30000;}
+				{buffer: false, escape: false, timeout: 30000}
 			);
 			return deferred.promise;
 		},
@@ -42,7 +42,7 @@ angular.module('Factories').factory('SalesforceContactCRUD', ['$q',
 						deferred.reject(event);
 					}
 				},
-				{buffer: false, escape: false, timeout: 30000;}
+				{buffer: false, escape: false, timeout: 30000}
 			);
 			return deferred.promise;
 		}

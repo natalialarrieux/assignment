@@ -88,46 +88,11 @@
 	"buffers":
 	[
 		{
-			"contents": "(function() {\n\n    ////////////////////////////////////////////////////////////\n    // App\n    ////////////////////////////////////////////////////////////\n\n\n    var App = angular.module('AngularBoilerplate', ['ngRoute', 'ui.bootstrap', 'Controllers', 'Directives', 'Factories', 'Filters', 'Services']);\n\n    App.config(['$routeProvider', function ($routeProvider) {\n\n        var token = \"\";\n        \n        $routeProvider.when('/', {\n            templateUrl: 'assets/templates/pages/home.html',\n            controller: 'HomeController'\n        })\n\n\n\n        .otherwise({redirectTo: '/'});\n\n    }]);\n\n})();\n",
-			"file": "angular-boilerplate/assets/js/modules/app.js",
-			"file_size": 598,
-			"file_write_time": 131085950603560060,
+			"file": "angular-boilerplate/assets/js/modules/factories/SalesforceContactCRUD.js",
 			"settings":
 			{
-				"buffer_size": 608,
+				"buffer_size": 1584,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "angular-boilerplate/assets/js/modules/controllers/loginController.js",
-			"settings":
-			{
-				"buffer_size": 490,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "myExampleAppMain.page",
-			"settings":
-			{
-				"buffer_size": 5570,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "angular-boilerplate/assets/templates/offcanvas.css",
-			"settings":
-			{
-				"buffer_size": 990,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "angular-boilerplate/assets/templates/mainindex.html",
-			"settings":
-			{
-				"buffer_size": 5946,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -177,51 +142,77 @@
 		"/C/Users/Natalia Larrieux/Documents/Assignment3",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/styles",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates"
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/pages",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/pages"
 	],
 	"file_history":
 	[
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/pinegrow.json",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories/SalesforceContactCRUD.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/pages/AssignmentIndex.page",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/services/helperService.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/directives/ab-table-row.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/pages/login.html",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/pages/home.html",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/directives/show-contact.html",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/app.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/services.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/Gruntfile.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/app.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/directives/show-contact.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/homeController.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/loginController.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/directives/myDirective.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/pages/editContact.html",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/templates.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/assets/js/ie10-viewport-bug-workaround.js",
+		"/C/Users/Natalia Larrieux/Documents/Assets salido de Pinegrow/assets/templates/mainindex.html",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/mainindex.html",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/directives/ng-table-row.html",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/pages/jumbotron-narrow.css",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/components/pg.blocks/css/style-library-1.css",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/components/pg.blocks/css/plugins.css",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/components/pg.blocks/css/blocks.css",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/components/pg.blocks/js/bskit-scripts.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/components/pg.blocks/js/plugins.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/bower_components/bootstrap/Gruntfile.js",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/myExampleAppMain.page",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/myExampleAppMain.page",
+		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/pinegrow.json",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentAuthenticationUtils.cls",
 		"/C/Users/Natalia Larrieux/Downloads/repo-gitignore/gitignore/Global/README.md",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentContactCRUDController.cls",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories/SalesforceContactCRUD.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentContactCRUDControllerExtension.cls",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/createController.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/editController.js",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/homeController.js",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers/loginController.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories/SalesforceAuthentication.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentMainController.cls",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/NewCaseListController.cls",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/EmailManager.cls",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AccountProcessor.cls",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AccountManager.cls",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/pages/home.html",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/services/helperService.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/factories/someFactory.js",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/app.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/services/SalesforceContactCRUD.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/templates/my-directive.html",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/classes/AssignmentAuthenticationUtils.cls-meta.xml",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/controllers.js",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/pages/AssignmentIndex.page",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/README.md",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/Gruntfile.js",
 		"/C/Users/Natalia Larrieux/Downloads/angular-boilerplate-archivos-modificados-assignment/Gruntfile.js",
 		"/C/Users/Natalia Larrieux/Downloads/angular-boilerplate-archivos-modificados-assignment/README.md",
 		"/C/Users/Natalia Larrieux/Downloads/angular-boilerplate-sin-ruby/Gruntfile.js",
 		"/C/Users/Natalia Larrieux/Downloads/angular-boilerplate-sin-ruby/README.md",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/myExampleAppMain.page",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/styles/assignmentStyle.css",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/styles/main.css",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/styles/sass/styles.scss",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/bower.json",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/assets/js/modules/main.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/angular-boilerplate/AssignmentIndex_conFixes.page",
-		"/C/Users/Natalia Larrieux/Documents/Assignment3/myExampleAppMain.page",
 		"/C/Users/Natalia Larrieux/Documents/Assignment3/src/staticresources/angular-boilerplate.resource",
 		"/C/Users/Natalia Larrieux/Documents/Assignment/assets/js/modules/app.js",
 		"/C/Users/Natalia Larrieux/Documents/Assignment2/Gruntfile.js",
@@ -247,6 +238,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\Users\\Natalia Larrieux\\Documents\\Assignment3\\angular-boilerplate",
 			"C:\\Users\\Natalia Larrieux\\Documents\\Assignment3\\src\\classes",
 			"C:\\Users\\Natalia Larrieux\\Documents\\Assignment3\\angular-boilerplate\\assets\\js\\modules",
 			"C:\\Users\\Natalia Larrieux\\Documents\\Assignment3\\angular-boilerplate\\assets"
@@ -257,6 +249,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"somefactory",
 			"editContact",
 			"blob",
 			"Blob",
@@ -285,46 +278,16 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "angular-boilerplate/assets/js/modules/app.js",
+					"file": "angular-boilerplate/assets/js/modules/factories/SalesforceContactCRUD.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 608,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								400,
-								400
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "angular-boilerplate/assets/js/modules/controllers/loginController.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 490,
+						"buffer_size": 1584,
 						"regions":
 						{
 						},
@@ -340,100 +303,11 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "myExampleAppMain.page",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5570,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2516,
-								2516
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1260.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "angular-boilerplate/assets/templates/offcanvas.css",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 990,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 84.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "angular-boilerplate/assets/templates/mainindex.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5946,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								912,
-								5937
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1256.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -472,7 +346,7 @@
 	"menu_visible": true,
 	"output.MavensMate-OutputPanel":
 	{
-		"height": 199.0
+		"height": 87.0
 	},
 	"output.find_results":
 	{

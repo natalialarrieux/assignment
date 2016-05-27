@@ -13,9 +13,9 @@ angular.module('Factories').factory('SalesforceAuthentication', ['$q',
 						deferred.reject(event);
 					}
 				},
-				{buffer: false, escape: false, timeout: 30000;}
+				{buffer: false, escape: false, timeout: 30000}
 			);
 			return deferred.promise;
 		}
  	};
- }
+ }]);

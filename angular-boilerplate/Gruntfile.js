@@ -226,8 +226,8 @@ module.exports = function(grunt) {
 
     // Default task(s)
     grunt.registerTask('default', []);
-    grunt.registerTask('build', ['ngtemplates', 'sass', 'browserify', 'concat', 'cssmin', 'uglify', 'jasmine']);
-    grunt.registerTask('build-full', ['ngtemplates', 'sass', 'browserify', 'concat', 'cssmin', 'uglify', 'jasmine', 'clean:deploy_temp', 'copy:js', 'copy:css', 'copy:images', 'copy:fonts', 'compress:angularBoilerplate']);
+    grunt.registerTask('build', ['ngtemplates', 'sass', 'browserify', 'concat', 'cssmin', 'uglify']); //'jasmine' fue quitado de build y build-full
+    grunt.registerTask('build-full', ['ngtemplates', 'sass', 'browserify', 'concat', 'cssmin', 'uglify', 'clean:deploy_temp', 'copy:js', 'copy:css', 'copy:images', 'copy:fonts', 'compress:angularBoilerplate']);
     grunt.registerTask('test', ['browserify', 'jasmine']);
     grunt.registerTask('deploy', ['shell:deploy']);
 
