@@ -51,6 +51,17 @@ bh_unicode_properties.cache
 GitHub.sublime-settings
 
 
+############ NETBEANS
+
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+.nb-gradle/
+
+
 ############ PINEGROW
 
 #Pinegrow backup files

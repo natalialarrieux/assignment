@@ -9,11 +9,6 @@
 
     App.config(['$routeProvider', function ($routeProvider) {
 
-        var username = 'hola';
-        var password = 'hola';
-        var token = 'hola';
-
-
         $routeProvider.when('/', {
             templateUrl: 'assets/templates/pages/login.html',
             controller: 'LoginController',

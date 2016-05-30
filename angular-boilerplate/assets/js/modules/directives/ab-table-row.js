@@ -6,6 +6,7 @@ angular.module('Directives')
             restrict: 'E',
             replace: false,
             templateUrl: 'assets/templates/directives/ab-table-row.html',
+            //acá vendría controller y controllerAs, pero en su lugar vamos a usar link
             link: function(scope, element, attrs) {
 
             }
