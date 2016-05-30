@@ -2,14 +2,14 @@ public with sharing class AssignmentContactCRUDController { // Utility class, co
 	
 	public AssignmentContactCRUDController () {}
 
-	public static Id createContact(String username, String password){ //Le cambié esto luego de hablar con Camilo
+	public static Id createContact(String firstName, String lastName, String phone, String username, String password){ //Le cambié esto luego de hablar con Camilo
 	// por el tema de que no hay forma de guardar el password hasheado si yo creo el usuario desde el org
 		
 		Blob blobPassword = Blob.valueOf(password);
 		Blob blobHash = Crypto.generateDigest('MD5', blobPassword);
         String hashPassword = EncodingUtil.base64Encode(blobHash);// Esto es porque blobHash.toString() tira el error de que 'Blob is not a valid UTF-8 string'
 
-		Contact cont = new Contact(Username__c=username, Password__c=hashPassword, LastName='Baratheon'); // Robert exparció su semilla
+		Contact cont = new Contact(FirstName=firstName, LastName=lastName, Phone=phone, Username__c=username, Password__c=hashPassword); 
 		Id ret = null;
 
 		try {
@@ -24,9 +24,13 @@ public with sharing class AssignmentContactCRUDController { // Utility class, co
 		return ret;
 	}
 
-	public static Boolean editContact(Id contactId, String firstName, String lastName){
+	public static Boolean editContact(Id contactId, String firstName, String lastName, String phone, String username, String password){
 
-		Contact cont = new Contact(Id=contactId, FirstName=firstName, LastName=lastName);
+		Blob blobPassword = Blob.valueOf(password);
+		Blob blobHash = Crypto.generateDigest('MD5', blobPassword);
+        String hashPassword = EncodingUtil.base64Encode(blobHash);
+
+		Contact cont = new Contact(Id=contactId, FirstName=firstName, LastName=lastName, Phone=phone, Username__c=username, Password__c=hashPassword);
 		Boolean ret = false;
 
 		try {

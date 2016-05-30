@@ -9,22 +9,22 @@ public with sharing class AssignmentContactCRUDControllerExtension {
     }
 
     @RemoteAction
-	public static Id createContact(String username, String password){
+	public static Id createContact(String firstName, String lastName, String phone, String username, String password){
 
 		Id ret = null;
 
-		ret = AssignmentContactCRUDController.createContact(username, password);
+		ret = AssignmentContactCRUDController.createContact(firstName, lastName, phone,  username, password);
 
 		return ret;
 	}
 
 	@RemoteAction
-	public static Boolean editContact(Id contactId, String firstName, String lastName, String username, String token){
+	public static Boolean editContact(Id contactId, String firstName, String lastName, String phone, String username, String password, String token){
 
 		Boolean ret = null;
 
 		if (AssignmentAuthenticationUtils.validateToken(username, token)) {
-			ret = AssignmentContactCRUDController.editContact(contactId, firstName, lastName);
+			ret = AssignmentContactCRUDController.editContact(contactId, firstName, lastName, phone, username, password);
 		}
 
 		return ret;

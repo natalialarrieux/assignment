@@ -44,6 +44,36 @@
                 "column": 40, 
                 "line": 5
             }, 
+            "name": "firstName"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 58, 
+                "line": 5
+            }, 
+            "name": "lastName"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 75, 
+                "line": 5
+            }, 
+            "name": "phone"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 89, 
+                "line": 5
+            }, 
             "name": "username"
         }, 
         {
@@ -51,7 +81,7 @@
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 57, 
+                "column": 106, 
                 "line": 5
             }, 
             "name": "password"
@@ -147,12 +177,72 @@
             "name": "lastName"
         }, 
         {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 92, 
+                "line": 27
+            }, 
+            "name": "phone"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 106, 
+                "line": 27
+            }, 
+            "name": "username"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 123, 
+                "line": 27
+            }, 
+            "name": "password"
+        }, 
+        {
+            "type": "Blob", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 8, 
+                "line": 29
+            }, 
+            "name": "blobPassword"
+        }, 
+        {
+            "type": "Blob", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 8, 
+                "line": 30
+            }, 
+            "name": "blobHash"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 31
+            }, 
+            "name": "hashPassword"
+        }, 
+        {
             "type": "Contact", 
             "modifiers": [], 
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 29
+                "line": 33
             }, 
             "name": "cont"
         }, 
@@ -162,7 +252,7 @@
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 30
+                "line": 34
             }, 
             "name": "ret"
         }, 
@@ -172,7 +262,7 @@
             "references": [], 
             "location": {
                 "column": 27, 
-                "line": 33
+                "line": 37
             }, 
             "name": "result"
         }, 
@@ -182,7 +272,7 @@
             "references": [], 
             "location": {
                 "column": 41, 
-                "line": 45
+                "line": 49
             }, 
             "name": "contactId"
         }, 
@@ -192,7 +282,7 @@
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 47
+                "line": 51
             }, 
             "name": "ret"
         }, 
@@ -202,7 +292,7 @@
             "references": [], 
             "location": {
                 "column": 29, 
-                "line": 50
+                "line": 54
             }, 
             "name": "result"
         }, 
@@ -212,7 +302,7 @@
             "references": [], 
             "location": {
                 "column": 47, 
-                "line": 62
+                "line": 66
             }, 
             "name": "username"
         }, 
@@ -222,7 +312,7 @@
             "references": [], 
             "location": {
                 "column": 64, 
-                "line": 62
+                "line": 66
             }, 
             "name": "token"
         }, 
@@ -232,7 +322,7 @@
             "references": [], 
             "location": {
                 "column": 17, 
-                "line": 64
+                "line": 68
             }, 
             "name": "ret"
         }, 
@@ -242,7 +332,7 @@
             "references": [], 
             "location": {
                 "column": 18, 
-                "line": 67
+                "line": 71
             }, 
             "name": "result"
         }
@@ -256,6 +346,18 @@
             ], 
             "name": "createContact", 
             "parameters": [
+                {
+                    "type": "String", 
+                    "name": "firstName"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "lastName"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "phone"
+                }, 
                 {
                     "type": "String", 
                     "name": "username"
@@ -292,6 +394,18 @@
                 {
                     "type": "String", 
                     "name": "lastName"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "phone"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "username"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "password"
                 }
             ], 
             "visibility": "PUBLIC", 
@@ -319,7 +433,7 @@
             "references": [], 
             "location": {
                 "column": 24, 
-                "line": 45
+                "line": 49
             }, 
             "returnType": "Boolean", 
             "type": null
@@ -344,7 +458,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 62
+                "line": 66
             }, 
             "returnType": "LIST", 
             "type": null
@@ -360,7 +474,7 @@
             "references": [], 
             "location": {
                 "column": 23, 
-                "line": 82
+                "line": 86
             }, 
             "returnType": "String", 
             "type": null
