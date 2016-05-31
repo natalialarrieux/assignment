@@ -7,15 +7,18 @@ angular.module('Directives')
             restrict: 'E',
             replace: false,
             templateUrl: 'assets/templates/show-contact.html',
+            // scope: {
+            //     name: "=",
+            //     company: "=",
+            //     phone: "=",
+            //     username: "=",
+            //     id: "="
+            // }
             scope: {
-                name: "=",
-                company: "=",
-                phone: "=",
-                username: "=",
-                id: "="
+                contact: "="
             },
             link: function(scope, element, attrs) {
-
+                
             }
         };
     }])

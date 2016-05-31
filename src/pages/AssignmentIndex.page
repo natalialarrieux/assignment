@@ -41,7 +41,6 @@
 		<!-- /.container -->
 	</nav>
 	<!-- /.navbar -->
-	<div id="fillJumbotron" class="visible-xs"></div>
 	<div class="jumbotron hidden-xs">
 		<div class="container">
 			<h1>Contact Management System</h1>

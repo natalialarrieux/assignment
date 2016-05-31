@@ -1,7 +1,12 @@
-angular.module('Factories').factory('SalesforceContactCRUD', ['$q',
- function SalesforceContactCRUDFactory($q, $rootScope, HelperService, $filter){
+angular.module('Factories').factory('SalesforceContactCRUD', ['$q', 'SalesforceAuthentication', '$rootScope',
+ function SalesforceContactCRUDFactory($q, SalesforceAuthentication, $rootScope){
+
+ 	var username = "hola";
+ 	var password = "hola";
+ 	var token = "hola";
 
  	return {
+
  		createContact: function(username, password){
 			var deferred = $q.defer();
 			AssignmentContactCRUDControllerExtension.createContact(username, password, 
