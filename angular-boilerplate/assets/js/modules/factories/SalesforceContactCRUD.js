@@ -1,18 +1,15 @@
 angular.module('Factories').factory('SalesforceContactCRUD', ['$q', 'SalesforceAuthentication', '$rootScope',
  function SalesforceContactCRUDFactory($q, SalesforceAuthentication, $rootScope){
 
- 	var username = "hola";
- 	var password = "hola";
- 	var token = "hola";
-
  	return {
 
- 		createContact: function(username, password){
+ 		createContact: function(firstName, lastName, username, password, title, phone, email){
 			var deferred = $q.defer();
-			AssignmentContactCRUDControllerExtension.createContact(username, password, 
+			AssignmentContactCRUDControllerExtension.createContact(firstName, lastName, 
+		username, password, title, phone, email, 
 				function (result, event){
 					if (event.status) {
-						deferred.resolve(JSON.parse(result)); // DUDA: El valor de retorno en realidad es un Id, debo parsearlo a JSON igual o eso es sólo para sObjects
+						deferred.resolve(result);
 					} else {
 						deferred.reject(event);
 					}
@@ -22,9 +19,24 @@ angular.module('Factories').factory('SalesforceContactCRUD', ['$q', 'SalesforceA
 			return deferred.promise;
 		},
 
-		editContact: function(contactId, firstName, lastName, username, token){
+		editContact: function(contactId, myUsername, myToken, title, phone, email){
 			var deferred = $q.defer();
-			AssignmentContactCRUDControllerExtension.editContact(contactId, firstName, lastName, username, token, 
+			AssignmentContactCRUDControllerExtension.editContact(contactId, myUsername, myToken, title, phone, email, 
+				function (result, event){
+					if (event.status) {
+						deferred.resolve(result); 
+					} else {
+						deferred.reject(event);
+					}
+				},
+				{buffer: false, escape: false, timeout: 30000}
+			);
+			return deferred.promise;
+		},
+
+		listUsers: function(myUsername, myToken){
+			var deferred = $q.defer();
+			AssignmentContactCRUDControllerExtension.listUsers(myUsername, myToken, 
 				function (result, event){
 					if (event.status) {
 						deferred.resolve(JSON.parse(result)); 
@@ -37,12 +49,12 @@ angular.module('Factories').factory('SalesforceContactCRUD', ['$q', 'SalesforceA
 			return deferred.promise;
 		},
 
-		listUsers: function(username, token){
+		textoPrueba: function(myUsername, myToken){
 			var deferred = $q.defer();
-			AssignmentContactCRUDControllerExtension.listUsers(username, token, 
+			AssignmentContactCRUDControllerExtension.elTexto(myUsername, myToken, 
 				function (result, event){
 					if (event.status) {
-						deferred.resolve(JSON.parse(result)); 
+						deferred.resolve(result); 
 					} else {
 						deferred.reject(event);
 					}
@@ -54,3 +66,4 @@ angular.module('Factories').factory('SalesforceContactCRUD', ['$q', 'SalesforceA
  	};
 	
 }]);
+

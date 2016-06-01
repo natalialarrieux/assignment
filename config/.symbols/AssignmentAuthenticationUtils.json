@@ -14,7 +14,7 @@
             "references": [], 
             "location": {
                 "column": 9, 
-                "line": 5
+                "line": 3
             }, 
             "type": null
         }
@@ -42,19 +42,19 @@
             "references": [], 
             "location": {
                 "column": 47, 
-                "line": 7
+                "line": 5
             }, 
-            "name": "username"
+            "name": "myUsername"
         }, 
         {
             "type": "String", 
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 64, 
-                "line": 7
+                "column": 66, 
+                "line": 5
             }, 
-            "name": "password"
+            "name": "myPassword"
         }, 
         {
             "type": "String", 
@@ -62,7 +62,7 @@
             "references": [], 
             "location": {
                 "column": 10, 
-                "line": 9
+                "line": 7
             }, 
             "name": "token"
         }, 
@@ -72,7 +72,7 @@
             "references": [], 
             "location": {
                 "column": 13, 
-                "line": 10
+                "line": 8
             }, 
             "name": "contacts"
         }, 
@@ -82,7 +82,7 @@
             "references": [], 
             "location": {
                 "column": 8, 
-                "line": 14
+                "line": 10
             }, 
             "name": "blobPassword"
         }, 
@@ -92,7 +92,7 @@
             "references": [], 
             "location": {
                 "column": 8, 
-                "line": 15
+                "line": 11
             }, 
             "name": "blobHash"
         }, 
@@ -102,7 +102,7 @@
             "references": [], 
             "location": {
                 "column": 10, 
-                "line": 16
+                "line": 12
             }, 
             "name": "hashPassword"
         }, 
@@ -112,7 +112,7 @@
             "references": [], 
             "location": {
                 "column": 16, 
-                "line": 22
+                "line": 17
             }, 
             "name": "myContact"
         }, 
@@ -122,7 +122,7 @@
             "references": [], 
             "location": {
                 "column": 16, 
-                "line": 23
+                "line": 18
             }, 
             "name": "rand"
         }, 
@@ -132,7 +132,7 @@
             "references": [], 
             "location": {
                 "column": 15, 
-                "line": 24
+                "line": 19
             }, 
             "name": "stringRand"
         }, 
@@ -142,7 +142,7 @@
             "references": [], 
             "location": {
                 "column": 15, 
-                "line": 25
+                "line": 20
             }, 
             "name": "stringForToken"
         }, 
@@ -152,7 +152,7 @@
             "references": [], 
             "location": {
                 "column": 13, 
-                "line": 26
+                "line": 21
             }, 
             "name": "blobString"
         }, 
@@ -162,7 +162,7 @@
             "references": [], 
             "location": {
                 "column": 13, 
-                "line": 27
+                "line": 22
             }, 
             "name": "blobToken"
         }, 
@@ -172,7 +172,7 @@
             "references": [], 
             "location": {
                 "column": 34, 
-                "line": 30
+                "line": 25
             }, 
             "name": "result"
         }, 
@@ -182,19 +182,19 @@
             "references": [], 
             "location": {
                 "column": 45, 
-                "line": 40
+                "line": 35
             }, 
-            "name": "username"
+            "name": "myUsername"
         }, 
         {
             "type": "String", 
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 62, 
-                "line": 40
+                "column": 64, 
+                "line": 35
             }, 
-            "name": "token"
+            "name": "myToken"
         }, 
         {
             "type": "Boolean", 
@@ -202,7 +202,7 @@
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 41
+                "line": 36
             }, 
             "name": "ret"
         }, 
@@ -212,7 +212,7 @@
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 42
+                "line": 37
             }, 
             "name": "cont"
         }
@@ -228,18 +228,18 @@
             "parameters": [
                 {
                     "type": "String", 
-                    "name": "username"
+                    "name": "myUsername"
                 }, 
                 {
                     "type": "String", 
-                    "name": "password"
+                    "name": "myPassword"
                 }
             ], 
             "visibility": "PUBLIC", 
             "references": [], 
             "location": {
                 "column": 23, 
-                "line": 7
+                "line": 5
             }, 
             "returnType": "String", 
             "type": null
@@ -253,18 +253,18 @@
             "parameters": [
                 {
                     "type": "String", 
-                    "name": "username"
+                    "name": "myUsername"
                 }, 
                 {
                     "type": "String", 
-                    "name": "token"
+                    "name": "myToken"
                 }
             ], 
             "visibility": "PUBLIC", 
             "references": [], 
             "location": {
                 "column": 24, 
-                "line": 40
+                "line": 35
             }, 
             "returnType": "Boolean", 
             "type": null

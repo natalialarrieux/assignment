@@ -7,16 +7,18 @@
                         <tr>
                             <th>First name</th>
                             <th>Last name</th>
-                            <th>Company name</th>
+                            <th>Title</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <ng-table-row></ng-table-row>
+                            <tr ng-repeat="contact in model.contacts"> <!-- DUDA ng-click="loadContact(contact.id)"-->
+                                <td>{{contact.FirstName}}</td>
+                                <td>{{contact.LastName}}</td>
+                                <td>{{contact.Title}}</td>
+                            </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
-
-<!-- pendiente hacer como los panels para show-contact con el table-row. y "contact in contacts" tiene que estar arriba, en ng-table-row -->

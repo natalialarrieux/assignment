@@ -1,38 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <div id="contact" class="form-container">
-               <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <div id="contact" class="form-container">
+           <form name="createForm" novalidate="true" ng-submit="createForm.$valid && model.createCall()">
 
-                    <fieldset class="form-group">
-                        <input name="first name" id="fName" type="text" value="" placeholder="First name" class="form-control" />
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <input id="lName" type="text" value="" placeholder="Last name" class="form-control" name="last name" />
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <input name="phone" id="phone" type="text" value="" placeholder="Phone" class="form-control" />
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <input name="username" id="username" type="text" value="" class="form-control" placeholder="Username" />
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <input name="password" id="pass" type="password" value="" class="form-control" placeholder="Password" />
-                    </fieldset>
+           <legend>Create a new contact!</legend>
 
-                    <div class="alert alert-danger red-alert"> 
-                        <p><strong>Sorry!</strong></p>
-                        <p class="message"></p>      
-                    </div>
+            <fieldset class="form-group">
+                <input name="first name" id="fName" type="text" ng-model="model.firstName" placeholder="First name" class="form-control" />
+            </fieldset>
+            <fieldset class="form-group">
+                <input ng-model="model.lastName" type="text" placeholder="Last name" class="form-control" name="last name" />
+            </fieldset>
+            <fieldset class="form-group">
+                <input name="username" type="text" class="form-control" placeholder="Username" ng-model="model.username" />
+            </fieldset>
+            <fieldset class="form-group">
+                <input name="password" type="password" class="form-control" placeholder="Password" ng-model="model.password" />
+            </fieldset>
+            <fieldset class="form-group">
+                <input name="title" type="text"placeholder="Title" class="form-control" ng-model="model.title" />
+            </fieldset>
+            <fieldset class="form-group">
+                <input name="phone" type="text" placeholder="Phone" class="form-control" ng-model="model.phone" />
+            </fieldset>
+            <fieldset class="form-group">
+                <input name="email" type="email" placeholder="E-mail" class="form-control" ng-model="model.email" />
+            </fieldset>
 
-                    <fieldset class="form-group">
-                        <button class="btn btn-primary" type="submit" id="btnCreate" name="create contact">Create contact!</button>
-                    </fieldset>
-                </form>
+            <div class="alert alert-danger" role="alert"> 
+                <p><strong>Sorry!</strong></p>
+                <p class="message"></p>      
             </div>
-        </div>
+
+            <div class="alert alert-success" role="alert">
+                <p><strong>Great!</strong></p>
+                <p class="message">You have successfully created a new user! Now go ahead and log in!</p>
+            </div>
+
+            <fieldset class="form-group">
+                <button class="btn btn-primary" type="submit" name="create contact">Create contact!</button>
+            </fieldset>
+        </form>
     </div>
 </div>
-</html>
+</div>

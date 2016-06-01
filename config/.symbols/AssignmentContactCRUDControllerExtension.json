@@ -90,18 +90,8 @@
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 75, 
-                "line": 11
-            }, 
-            "name": "phone"
-        }, 
-        {
-            "type": "String", 
-            "modifiers": [], 
-            "references": [], 
-            "location": {
-                "column": 89, 
-                "line": 11
+                "column": 10, 
+                "line": 12
             }, 
             "name": "username"
         }, 
@@ -110,10 +100,40 @@
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 106, 
-                "line": 11
+                "column": 27, 
+                "line": 12
             }, 
             "name": "password"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 44, 
+                "line": 12
+            }, 
+            "name": "title"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 58, 
+                "line": 12
+            }, 
+            "name": "phone"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 72, 
+                "line": 12
+            }, 
+            "name": "email"
         }, 
         {
             "type": "Id", 
@@ -121,7 +141,7 @@
             "references": [], 
             "location": {
                 "column": 6, 
-                "line": 13
+                "line": 14
             }, 
             "name": "ret"
         }, 
@@ -131,7 +151,7 @@
             "references": [], 
             "location": {
                 "column": 39, 
-                "line": 21
+                "line": 22
             }, 
             "name": "contactId"
         }, 
@@ -141,27 +161,37 @@
             "references": [], 
             "location": {
                 "column": 57, 
-                "line": 21
+                "line": 22
             }, 
-            "name": "firstName"
+            "name": "myUsername"
         }, 
         {
             "type": "String", 
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 75, 
-                "line": 21
+                "column": 76, 
+                "line": 22
             }, 
-            "name": "lastName"
+            "name": "myToken"
         }, 
         {
             "type": "String", 
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 92, 
-                "line": 21
+                "column": 10, 
+                "line": 23
+            }, 
+            "name": "title"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 23
             }, 
             "name": "phone"
         }, 
@@ -170,30 +200,10 @@
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 106, 
-                "line": 21
+                "column": 38, 
+                "line": 23
             }, 
-            "name": "username"
-        }, 
-        {
-            "type": "String", 
-            "modifiers": [], 
-            "references": [], 
-            "location": {
-                "column": 123, 
-                "line": 21
-            }, 
-            "name": "password"
-        }, 
-        {
-            "type": "String", 
-            "modifiers": [], 
-            "references": [], 
-            "location": {
-                "column": 140, 
-                "line": 21
-            }, 
-            "name": "token"
+            "name": "email"
         }, 
         {
             "type": "Boolean", 
@@ -201,7 +211,7 @@
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 23
+                "line": 25
             }, 
             "name": "ret"
         }, 
@@ -211,7 +221,7 @@
             "references": [], 
             "location": {
                 "column": 41, 
-                "line": 33
+                "line": 35
             }, 
             "name": "contactId"
         }, 
@@ -221,19 +231,19 @@
             "references": [], 
             "location": {
                 "column": 59, 
-                "line": 33
+                "line": 35
             }, 
-            "name": "username"
+            "name": "myUsername"
         }, 
         {
             "type": "String", 
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 76, 
-                "line": 33
+                "column": 78, 
+                "line": 35
             }, 
-            "name": "token"
+            "name": "myToken"
         }, 
         {
             "type": "Boolean", 
@@ -241,7 +251,7 @@
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 35
+                "line": 37
             }, 
             "name": "ret"
         }, 
@@ -250,28 +260,78 @@
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 47, 
-                "line": 45
+                "column": 40, 
+                "line": 47
             }, 
-            "name": "username"
+            "name": "myUsername"
         }, 
         {
             "type": "String", 
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 64, 
-                "line": 45
+                "column": 59, 
+                "line": 47
             }, 
-            "name": "token"
+            "name": "myToken"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 10, 
+                "line": 49
+            }, 
+            "name": "ret"
         }, 
         {
             "type": "LIST", 
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 17, 
-                "line": 47
+                "column": 18, 
+                "line": 52
+            }, 
+            "name": "contacts"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 39, 
+                "line": 60
+            }, 
+            "name": "contactId"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 57, 
+                "line": 60
+            }, 
+            "name": "myUsername"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 76, 
+                "line": 60
+            }, 
+            "name": "myToken"
+        }, 
+        {
+            "type": "Contact", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 11, 
+                "line": 61
             }, 
             "name": "ret"
         }, 
@@ -281,7 +341,7 @@
             "references": [], 
             "location": {
                 "column": 41, 
-                "line": 57
+                "line": 71
             }, 
             "name": "username"
         }, 
@@ -291,7 +351,7 @@
             "references": [], 
             "location": {
                 "column": 58, 
-                "line": 57
+                "line": 71
             }, 
             "name": "token"
         }, 
@@ -301,7 +361,7 @@
             "references": [], 
             "location": {
                 "column": 13, 
-                "line": 59
+                "line": 73
             }, 
             "name": "ret"
         }
@@ -325,15 +385,23 @@
                 }, 
                 {
                     "type": "String", 
-                    "name": "phone"
-                }, 
-                {
-                    "type": "String", 
                     "name": "username"
                 }, 
                 {
                     "type": "String", 
                     "name": "password"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "title"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "phone"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "email"
                 }
             ], 
             "visibility": "PUBLIC", 
@@ -358,11 +426,15 @@
                 }, 
                 {
                     "type": "String", 
-                    "name": "firstName"
+                    "name": "myUsername"
                 }, 
                 {
                     "type": "String", 
-                    "name": "lastName"
+                    "name": "myToken"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "title"
                 }, 
                 {
                     "type": "String", 
@@ -370,22 +442,14 @@
                 }, 
                 {
                     "type": "String", 
-                    "name": "username"
-                }, 
-                {
-                    "type": "String", 
-                    "name": "password"
-                }, 
-                {
-                    "type": "String", 
-                    "name": "token"
+                    "name": "email"
                 }
             ], 
             "visibility": "PUBLIC", 
             "references": [], 
             "location": {
                 "column": 24, 
-                "line": 21
+                "line": 22
             }, 
             "returnType": "Boolean", 
             "type": null
@@ -403,18 +467,18 @@
                 }, 
                 {
                     "type": "String", 
-                    "name": "username"
+                    "name": "myUsername"
                 }, 
                 {
                     "type": "String", 
-                    "name": "token"
+                    "name": "myToken"
                 }
             ], 
             "visibility": "PUBLIC", 
             "references": [], 
             "location": {
                 "column": 24, 
-                "line": 33
+                "line": 35
             }, 
             "returnType": "Boolean", 
             "type": null
@@ -428,20 +492,49 @@
             "parameters": [
                 {
                     "type": "String", 
-                    "name": "username"
+                    "name": "myUsername"
                 }, 
                 {
                     "type": "String", 
-                    "name": "token"
+                    "name": "myToken"
                 }
             ], 
             "visibility": "PUBLIC", 
             "references": [], 
             "location": {
-                "column": 30, 
-                "line": 45
+                "column": 23, 
+                "line": 47
             }, 
-            "returnType": "LIST", 
+            "returnType": "String", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "readContact", 
+            "parameters": [
+                {
+                    "type": "Id", 
+                    "name": "contactId"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "myUsername"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "myToken"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 60
+            }, 
+            "returnType": "Contact", 
             "type": null
         }, 
         {
@@ -464,7 +557,7 @@
             "references": [], 
             "location": {
                 "column": 26, 
-                "line": 57
+                "line": 71
             }, 
             "returnType": "String", 
             "type": null

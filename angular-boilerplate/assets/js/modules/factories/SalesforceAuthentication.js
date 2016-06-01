@@ -2,9 +2,9 @@ angular.module('Factories').factory('SalesforceAuthentication', ['$q',
  function SalesforceAuthenticationFactory($q){
 
  	return {
-		userLogin: function(username, password){
+		userLogin: function(myUsername, myPassword){
 			var deferred = $q.defer();
-			AssignmentMainController.userLogin(username, password, 
+			AssignmentMainController.userLogin(myUsername, myPassword, 
 				function (result, event){
 					if (event.status) {
 						deferred.resolve(result);

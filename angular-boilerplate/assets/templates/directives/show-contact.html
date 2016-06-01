@@ -1,8 +1,10 @@
 <p class="text-center" ng-class="{'hidden':{{id}}}">Select one contact to view more information</p>
 <div ng-class="{'visible':{{id}}}}">
-	<h2>{{name}}</h2>
-	<p class="lead">{{company}}</p>
-	<p>{{phone + ' ' + username}}</p>
+	<h2>{{firstName + ' ' + lastName}}</h2>
+	<p class="lead">{{title}}</p>
+	<p>Username: {{username}}</p>
+	<p>Phone: {{phone}}</p>
+	<p>Email: {{email}}</p>
 	<div class="row">
 		<div class="col-xs-12 col-sm-offset-3 col-sm-6">
 			<a href="/edit/{{id}}" class="btn btn-block btn-primary">Edit</a> <!-- pendiente -->

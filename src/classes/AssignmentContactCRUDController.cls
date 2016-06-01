@@ -2,14 +2,23 @@ public with sharing class AssignmentContactCRUDController { // Utility class, co
 	
 	public AssignmentContactCRUDController () {}
 
-	public static Id createContact(String firstName, String lastName, String phone, String username, String password){ //Le cambié esto luego de hablar con Camilo
-	// por el tema de que no hay forma de guardar el password hasheado si yo creo el usuario desde el org
+	public static Id createContact(String firstName, String lastName, 
+		String username, String password, String title, String phone, String email){
 		
 		Blob blobPassword = Blob.valueOf(password);
 		Blob blobHash = Crypto.generateDigest('MD5', blobPassword);
         String hashPassword = EncodingUtil.base64Encode(blobHash);// Esto es porque blobHash.toString() tira el error de que 'Blob is not a valid UTF-8 string'
 
-		Contact cont = new Contact(FirstName=firstName, LastName=lastName, Phone=phone, Username__c=username, Password__c=hashPassword); 
+		Contact cont = new Contact(
+			FirstName=firstName, 
+			LastName=lastName, 
+			Username__c=username, 
+			Password__c=hashPassword, 
+			Title= title, 
+			Phone=phone, 
+			Email=email
+		); 
+
 		Id ret = null;
 
 		try {
@@ -24,13 +33,21 @@ public with sharing class AssignmentContactCRUDController { // Utility class, co
 		return ret;
 	}
 
-	public static Boolean editContact(Id contactId, String firstName, String lastName, String phone, String username, String password){
+	public static Boolean editContact(Id contactId, String title, String phone, String email){
 
-		Blob blobPassword = Blob.valueOf(password);
-		Blob blobHash = Crypto.generateDigest('MD5', blobPassword);
-        String hashPassword = EncodingUtil.base64Encode(blobHash);
 
-		Contact cont = new Contact(Id=contactId, FirstName=firstName, LastName=lastName, Phone=phone, Username__c=username, Password__c=hashPassword);
+/*		Contact cont = new Contact(Id=contactId, Title=title, Phone=phone, Email=email);
+		Boolean success = true;
+
+		try
+
+			update cont<
+		catch
+			success false
+
+*/
+
+		Contact cont = new Contact(Id=contactId, Title=title, Phone=phone, Email=email);
 		Boolean ret = false;
 
 		try {
@@ -63,14 +80,14 @@ public with sharing class AssignmentContactCRUDController { // Utility class, co
 		return ret;
 	}
 
-	public static List<Contact> listUsers(String username, String token){
+	public static List<Contact> listUsers(String myUsername, String myToken){
 
 		List<Contact> ret = null;
 
-		if (AssignmentAuthenticationUtils.validateToken(username, token)){
+		if (AssignmentAuthenticationUtils.validateToken(myUsername, myToken)){
 			List<Contact> result = null;
 			try {
-			    result = Database.query('Select Id, Name from Contacts');
+			    result = [Select Id, FirstName, LastName, Title from Contact];
 			    if (result.size() > 0){
 		            ret = result;
 			    }
@@ -78,6 +95,23 @@ public with sharing class AssignmentContactCRUDController { // Utility class, co
 			} catch (Exception e) {
 			    System.debug(e.getTypeName() + ' - ' + e.getCause() + ': ' + e.getMessage());
 			}
+		}
+
+		return ret;
+	}
+
+	public static Contact readContact(Id contactId){
+
+		Contact ret = null;
+
+		try {
+		    List<Contact> result = Database.query('Select Id, FirstName, LastName, Title, Username__c, Phone, Email from Contact WHERE Id = :contactId');
+		    if (result.size() == 1){
+	            ret = result[0]; // Esto lo hice así porque leí que era lo mejor para cuando uno hace una query y no sabe si le va a retornar algo o no
+		    }
+
+		} catch (Exception e) {
+		    System.debug(e.getTypeName() + ' - ' + e.getCause() + ': ' + e.getMessage());
 		}
 
 		return ret;

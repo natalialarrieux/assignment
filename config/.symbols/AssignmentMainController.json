@@ -44,17 +44,17 @@
                 "column": 40, 
                 "line": 6
             }, 
-            "name": "username"
+            "name": "myUsername"
         }, 
         {
             "type": "String", 
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 57, 
+                "column": 59, 
                 "line": 6
             }, 
-            "name": "password"
+            "name": "myPassword"
         }
     ], 
     "id": "01p3600000C2iHOAAZ", 
@@ -68,11 +68,11 @@
             "parameters": [
                 {
                     "type": "String", 
-                    "name": "username"
+                    "name": "myUsername"
                 }, 
                 {
                     "type": "String", 
-                    "name": "password"
+                    "name": "myPassword"
                 }
             ], 
             "visibility": "PUBLIC", 

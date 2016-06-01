@@ -1,28 +1,38 @@
-<div class="row"> <!-- PENDIENTE que los placeholders bindeen con los datos originales -->
-    <div class="col-xs-12">
-        <div id="contact" class="form-container">
-            <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <div class="form-container">
+            <form name="editForm" novalidate="true" ng-submit="editForm.$valid && model.saveCall()">
 
                 <fieldset class="form-group">
-                    <input name="first name" id="fName" type="text" value="" placeholder="First name" class="form-control" />
+                    <input name="first name" id="fName" type="text" ng-model="model.firstName" placeholder="First name" class="form-control" disabled="true"/>
                 </fieldset>
                 <fieldset class="form-group">
-                    <input id="lName" type="text" value="" placeholder="Last name" class="form-control" name="last name" />
+                    <input ng-model="model.lastName" type="text" placeholder="Last name" class="form-control" name="last name" disabled="true"/>
                 </fieldset>
-                <fieldset class="form-group">
-                    <input name="phone" id="phone" type="text" value="" placeholder="Phone" class="form-control" />
+                <fieldset class="form-group hidden-xs">
+                    <input name="username" type="text" class="form-control" placeholder="Username" ng-model="model.username" disabled="true"/>
                 </fieldset>
-                <fieldset class="form-group">
-                    <input name="password" id="pass" type="password" value="" class="form-control" placeholder="Password" />
+                <fieldset class="form-group hidden-xs">
+                    <input name="password" type="password" class="form-control" placeholder="Password" ng-model="model.password" disabled="true"/>
                 </fieldset>
 
-                <div class="alert alert-danger red-alert"> <!-- PENDIENTE convertir en directiva -->
+                <fieldset class="form-group">
+                    <input ng-model="model.title" name="title" type="text" placeholder="Contact's Title" class="form-control" />
+                </fieldset>
+                <fieldset ng-model="model.phone" class="form-group">
+                    <input type="text" placeholder="Phone" class="form-control" name="phone" />
+                </fieldset>
+                <fieldset ng-model="model.email" class="form-group">
+                    <input name="email" type="email" class="form-control" placeholder="E-mail" />
+                </fieldset>
+
+                <fieldset class="alert alert-danger red-alert"> <!-- PENDIENTE convertir en directiva -->
                     <p><strong>Sorry!</strong></p>
                     <p class="message"></p>      
-                </div>
+                </fieldset>
                 
                 <fieldset class="form-group">
-                    <button class="btn btn-primary" type="submit" id="btnSave" name="save your changes">Save changes</button>
+                    <button class="btn btn-primary" type="submit" name="save your changes">Save changes</button>
                 </fieldset>
 
             </form>

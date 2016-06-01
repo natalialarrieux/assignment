@@ -1,17 +1,28 @@
-angular.module('Controllers').controller('EditController', ['$scope', 'SalesforceContactCRUD',
-     function ($scope, SalesforceContactCRUD, Helper) {
+angular.module('Controllers').controller('EditController', ['$rootScope', '$scope', 'SalesforceContactCRUD',
+     function ($rootScope, $scope, SalesforceContactCRUD, Helper) {
 
-		$scope.model = {};
+		$scope.model = {
+			contactId: "", 
+			firstName: "", 
+			lastName: "", 
+			username: "", 
+			password: "", 
+			title: "", 
+			phone: "", 
+			email: ""
+		};
 		
-		//PENDIENTE Acá es cuando tiene que ir a buscar el token a la session
-		SalesforceContactCRUD.editContact(contactId, firstName, lastName, username, token).then(
-			function(response){
-				//PENDIENTE Mostrar un mensaje de éxito o mostrar el coso ya editado.
-				console.log(response);
-			},
-			function(event){
-				console.log(event);
-			}
-		);
+		$scope.saveCall = function(){
+			SalesforceContactCRUD.editContact(model.contactId, $rootScope.myUsername, $rootScope.myToken, 
+				model.title, model.phone, model.email).then(
+				function(response){
+					//PENDIENTE Mostrar un mensaje de éxito o mostrar el coso ya editado.
+					console.log(response);
+				},
+				function(event){
+					console.log(event);
+				}
+			);
+		};
 	
     }]);
