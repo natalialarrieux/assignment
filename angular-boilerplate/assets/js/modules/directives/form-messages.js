@@ -1,17 +1,13 @@
 angular.module('Directives')
 
 	// Utilities is being injected (dependency injection), for being used in this directive. It could be a service, factory, etc.
-    .directive('abTableRow', [function() {
-
+    .directive('formMessages', [function() {
         return {
             restrict: 'E',
             replace: false,
-            templateUrl: 'assets/templates/directives/ab-table-row.html',
-
+            templateUrl: 'assets/templates/form-messages.html',
             link: function(scope, element, attrs) {
-                // element.on("click"), function(){
-                //     attr.
-                //}
+
             }
         };
     }])

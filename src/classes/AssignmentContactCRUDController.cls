@@ -35,7 +35,7 @@ public with sharing class AssignmentContactCRUDController { // Utility class, co
 
 	public static Boolean editContact(Id contactId, String title, String phone, String email){
 
-
+// OTRA FORMA DE HACERLO, INVIRTIENDO EL ORDEN DE false/true (EJEMPLO DE CAMILO)
 /*		Contact cont = new Contact(Id=contactId, Title=title, Phone=phone, Email=email);
 		Boolean success = true;
 
@@ -87,7 +87,7 @@ public with sharing class AssignmentContactCRUDController { // Utility class, co
 		if (AssignmentAuthenticationUtils.validateToken(myUsername, myToken)){
 			List<Contact> result = null;
 			try {
-			    result = [Select Id, FirstName, LastName, Title from Contact];
+			    result = [Select Id, FirstName, LastName, Title from Contact]; // BP Esto es mejor que Database.query() porque me tira el error ya desde el IDE
 			    if (result.size() > 0){
 		            ret = result;
 			    }
@@ -105,7 +105,7 @@ public with sharing class AssignmentContactCRUDController { // Utility class, co
 		Contact ret = null;
 
 		try {
-		    List<Contact> result = Database.query('Select Id, FirstName, LastName, Title, Username__c, Phone, Email from Contact WHERE Id = :contactId');
+		    List<Contact> result = Database.query('Select Id, FirstName, LastName, Title, Username__c, Password__c, Phone, Email from Contact WHERE Id = :contactId');
 		    if (result.size() == 1){
 	            ret = result[0]; // Esto lo hice así porque leí que era lo mejor para cuando uno hace una query y no sabe si le va a retornar algo o no
 		    }

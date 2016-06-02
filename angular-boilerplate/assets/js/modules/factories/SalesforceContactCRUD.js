@@ -49,12 +49,12 @@ angular.module('Factories').factory('SalesforceContactCRUD', ['$q', 'SalesforceA
 			return deferred.promise;
 		},
 
-		textoPrueba: function(myUsername, myToken){
+		readContact: function(contactId, myUsername, myToken){
 			var deferred = $q.defer();
-			AssignmentContactCRUDControllerExtension.elTexto(myUsername, myToken, 
+			AssignmentContactCRUDControllerExtension.readContact(contactId, myUsername, myToken, 
 				function (result, event){
 					if (event.status) {
-						deferred.resolve(result); 
+						deferred.resolve(JSON.parse(result)); 
 					} else {
 						deferred.reject(event);
 					}

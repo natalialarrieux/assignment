@@ -1,7 +1,13 @@
 <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
         <div class="form-container">
-            <form name="editForm" novalidate="true" ng-submit="editForm.$valid && model.saveCall()">
+            <form name="editForm" novalidate="true" ng-submit="editForm.$valid && saveCall()">
+
+                <legend>Edit one of your contacts</legend>
+
+                <div class="alert alert-info" role="alert">
+                    <p class="text-center">Note that there are some fields that can't be changed.</p>
+                </div>
 
                 <fieldset class="form-group">
                     <input name="first name" id="fName" type="text" ng-model="model.firstName" placeholder="First name" class="form-control" disabled="true"/>
@@ -19,20 +25,25 @@
                 <fieldset class="form-group">
                     <input ng-model="model.title" name="title" type="text" placeholder="Contact's Title" class="form-control" />
                 </fieldset>
-                <fieldset ng-model="model.phone" class="form-group">
-                    <input type="text" placeholder="Phone" class="form-control" name="phone" />
+                <fieldset class="form-group">
+                    <input ng-model="model.phone" type="text" placeholder="Phone" class="form-control" name="phone" />
                 </fieldset>
-                <fieldset ng-model="model.email" class="form-group">
-                    <input name="email" type="email" class="form-control" placeholder="E-mail" />
+                <fieldset class="form-group">
+                    <input ng-model="model.email" name="email" type="email" class="form-control" placeholder="E-mail" />
                 </fieldset>
 
-                <fieldset class="alert alert-danger red-alert"> <!-- PENDIENTE convertir en directiva -->
+                <div class="alert alert-danger"> <!-- PENDIENTE convertir en directiva -->
                     <p><strong>Sorry!</strong></p>
                     <p class="message"></p>      
-                </fieldset>
+                </div>
+
+                <div class="alert alert-success" role="alert">
+                    <p><strong>Great!</strong></p>
+                    <p class="message">Your changes have been saved to the database.</p>
+                </div>
                 
                 <fieldset class="form-group">
-                    <button class="btn btn-primary" type="submit" name="save your changes">Save changes</button>
+                    <input class="btn btn-primary" type="submit" name="save your changes" value="Save changes" />
                 </fieldset>
 
             </form>

@@ -7,10 +7,9 @@ angular.module('Controllers')
 		};
 
 	//	SalesforceContactCRUD.listUsers($rootScope.myUsername, $rootScope.myToken).then(
-		SalesforceContactCRUD.listUsers("hola", "hola").then(
+		SalesforceContactCRUD.listUsers("hola", "hola").then( // PENDIENTE cambiar por lo que está arriba cuando ande el login
 			function(response){
 				$scope.model.contacts = response;
-				console.log(response);
 			},
 			function(event){
 				console.log(event);

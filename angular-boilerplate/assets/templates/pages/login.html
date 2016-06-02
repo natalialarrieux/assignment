@@ -2,27 +2,29 @@
     <div class="col-sm-8 col-sm-offset-2">
         <h2 class="text-center">Welcome to Contact Management!</h2>
         <p class="text-center">In order to start working, you need to login to the system with your username and password. If you don't have an account yet, feel free to sign up!</p>
-        <form name="loginForm" novalidate="true" ng-submit="loginForm.$valid && model.loginCall()"> 
+        <div class="form-container">
+            <form name="loginForm" novalidate="true" ng-submit="loginForm.$valid && loginCall()"> 
 
-            <fieldset class="form-group">
-                <input ng-model="model.tempUser" type="text" placeholder="Username" class="form-control" required="true">
-            </fieldset>
-            <fieldset class="form-group">
-                <input ng-model="model.tempPass" type="password" placeholder="Password" class="form-control" required="true">
-            </fieldset>
+                <fieldset class="form-group">
+                    <input ng-model="model.tempUser" type="text" placeholder="Username" class="form-control" required="true">
+                </fieldset>
+                <fieldset class="form-group">
+                    <input ng-model="model.tempPass" type="password" placeholder="Password" class="form-control" required="true">
+                </fieldset>
 
-            <fieldset class="alert alert-danger red-alert"> 
-                <p><strong>Sorry!</strong></p>
-                <p class="message"></p>      
-            </fieldset>
+                <fieldset class="alert alert-danger red-alert"> 
+                    <p><strong>Sorry!</strong></p>
+                    <p class="message"></p>      
+                </fieldset>
 
-            <fieldset class="form-group">
-                <a class="btn btn-primary btn-block">Login</a> <!-- ng-href="#/home" debe ser condicional al login -->
-            </fieldset>
+                <fieldset class="form-group">
+                <input class="btn btn-primary btn-block" type="submit" name="log in" value="Login"/> <!-- ng-href="#/home" debe ser condicional al login -->
+                </fieldset>
 
-            <fieldset class="form-group">
-                <a class="btn btn-block" ng-href="#/create">Register</a>
-            </fieldset>
-        </form>
+                <fieldset class="form-group">
+                    <a class="btn btn-block" ng-href="#/create">Register</a>
+                </fieldset> <!-- class btn-block ? -->
+            </form>
+        </div>
     </div>
 </div>

@@ -58,26 +58,16 @@ public with sharing class AssignmentContactCRUDControllerExtension {
 	}
 
 	@RemoteAction
-	public static Contact readContact(Id contactId, String myUsername, String myToken){
-		Contact ret = null;
+	public static String readContact(Id contactId, String myUsername, String myToken){
+		String ret = null;
 
 		if (AssignmentAuthenticationUtils.validateToken(myUsername, myToken)) {
-			ret = AssignmentContactCRUDController.readContact(contactId);
+			Contact cont = AssignmentContactCRUDController.readContact(contactId);
+			ret = JSON.serializePretty(cont);
 		}
 
 		return ret;
 	}
-	
-    @RemoteAction
-    public static String elTexto(String username, String token){ // PENDIENTE BORRAR
 
-    	String ret = 'No hay texto';
-
-		if (AssignmentAuthenticationUtils.validateToken(username, token)) {
-			ret = AssignmentContactCRUDController.unTexto();
-		}
-
-		return ret;
-    }
 }
 

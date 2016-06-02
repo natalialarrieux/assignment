@@ -1,12 +1,12 @@
 <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
-        <div id="contact" class="form-container">
-           <form name="createForm" novalidate="true" ng-submit="createForm.$valid && model.createCall()">
+        <div class="form-container">
+           <form name="createForm" novalidate="true" ng-submit="createForm.$valid && createCall()">
 
-           <legend>Create a new contact!</legend>
+            <legend>Create a new contact!</legend>
 
             <fieldset class="form-group">
-                <input name="first name" id="fName" type="text" ng-model="model.firstName" placeholder="First name" class="form-control" />
+                <input name="first name" type="text" ng-model="model.firstName" placeholder="First name" class="form-control" />
             </fieldset>
             <fieldset class="form-group">
                 <input ng-model="model.lastName" type="text" placeholder="Last name" class="form-control" name="last name" />
@@ -27,18 +27,10 @@
                 <input name="email" type="email" placeholder="E-mail" class="form-control" ng-model="model.email" />
             </fieldset>
 
-            <div class="alert alert-danger" role="alert"> 
-                <p><strong>Sorry!</strong></p>
-                <p class="message"></p>      
-            </div>
-
-            <div class="alert alert-success" role="alert">
-                <p><strong>Great!</strong></p>
-                <p class="message">You have successfully created a new user! Now go ahead and log in!</p>
-            </div>
+            <form-messages></form-messages>
 
             <fieldset class="form-group">
-                <button class="btn btn-primary" type="submit" name="create contact">Create contact!</button>
+                <input class="btn btn-primary" type="submit" name="create contact" value="Create contact!"/>
             </fieldset>
         </form>
     </div>
