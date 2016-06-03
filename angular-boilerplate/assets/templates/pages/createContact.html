@@ -27,7 +27,12 @@
                 <input name="email" type="email" placeholder="E-mail" class="form-control" ng-model="model.email" />
             </fieldset>
 
-            <form-messages></form-messages>
+            <form-messages messageGreen="You now have a valid user. Go ahead and log in to the system!"
+                           messageRed="Your user couldn't be created. The next values provided aren't valid:"
+                           both="true"
+                           display="true"
+                           red="!createForm.$valid"
+            ></form-messages>
 
             <fieldset class="form-group">
                 <input class="btn btn-primary" type="submit" name="create contact" value="Create contact!"/>

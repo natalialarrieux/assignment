@@ -4,10 +4,13 @@ angular.module('Controllers')
 
 		$scope.model = {
 			/*Los defino como temporales y en el scope de la LoginController. 
-			Cuando se confirme que son valores válidos, los pasaré al $rootscope*/
+			Cuando se confirme que son valores válidos, los paso al $rootscope*/
 			tempUser: "",
 			tempPass: ""
 		};
+
+		$rootScope.myUsername = "";
+		$rootScope.myToken = ""; // esto provoca que si yo ya me autentiqué y modifico la ruta a mano, me tengo que volver a loggear
 		
 		$scope.loginCall= function(){
 			SalesforceAuthentication.userLogin($scope.model.tempUser, $scope.model.tempPass).then(
@@ -21,8 +24,6 @@ angular.module('Controllers')
 					} else { //Caso negativo: usuario o password incorrecto
 						// Reutilization.setErrorMessage("The username or password are incorrect"); PENDIENTE esto lo voy a hacer con una directiva
 					}
-					console.log($rootScope.myUsername);
-					console.log(response);
 				},
 				function(event){
 					console.log(event);

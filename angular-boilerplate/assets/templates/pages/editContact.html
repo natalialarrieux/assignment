@@ -32,15 +32,12 @@
                     <input ng-model="model.email" name="email" type="email" class="form-control" placeholder="E-mail" />
                 </fieldset>
 
-                <div class="alert alert-danger"> <!-- PENDIENTE convertir en directiva -->
-                    <p><strong>Sorry!</strong></p>
-                    <p class="message"></p>      
-                </div>
-
-                <div class="alert alert-success" role="alert">
-                    <p><strong>Great!</strong></p>
-                    <p class="message">Your changes have been saved to the database.</p>
-                </div>
+                <form-messages messageGreen="Your changes have been saved to the database."
+                           messageRed="Your changes couldn't be saved. The next values provided aren't valid:"
+                           both="true"
+                           display="true"
+                           red="!editForm.$valid"
+                ></form-messages>
                 
                 <fieldset class="form-group">
                     <input class="btn btn-primary" type="submit" name="save your changes" value="Save changes" />
