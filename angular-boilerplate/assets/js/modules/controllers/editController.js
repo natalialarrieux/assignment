@@ -1,5 +1,5 @@
-angular.module('Controllers').controller('EditController', ['$rootScope', '$routeParams', '$scope', 'SalesforceContactCRUD',
-	function ($rootScope, $routeParams, $scope, SalesforceContactCRUD, Helper) {
+angular.module('Controllers').controller('EditController', ['$rootScope', '$location', '$routeParams', '$scope', 'SalesforceContactCRUD',
+	function ($rootScope, $location, $routeParams, $scope, SalesforceContactCRUD, Helper) {
 
 		$scope.model = {
 			contactId: "", 
@@ -12,9 +12,8 @@ angular.module('Controllers').controller('EditController', ['$rootScope', '$rout
 			email: ""
 		};
 
-		//SalesforceContactCRUD.readContact($scope.model.contactId, $rootScope.myUsername, $rootScope.myToken).then(
-		SalesforceContactCRUD.readContact($routeParams.id, 'hola', 'hola').then(
-			function(response){ //response tendría que devolver el objeto con todos los campos, menos Id, que ya lo tengo
+		SalesforceContactCRUD.readContact($routeParams.id, $rootScope.myUsername, $rootScope.myToken).then(
+			function(response){ //response tendría que devolver el objeto con todos los campos, incluido el Id, aunque ya lo tengo
 				$scope.model.contactId = response.Id;
 				$scope.model.firstName = response.FirstName;
 				$scope.model.lastName = response.LastName;
@@ -23,7 +22,6 @@ angular.module('Controllers').controller('EditController', ['$rootScope', '$rout
 				$scope.model.title = response.Title;
 				$scope.model.phone = response.Phone;
 				$scope.model.email = response.Email;
-				console.log(response);
 			},
 			function(event){
 				console.log(event);
@@ -31,12 +29,12 @@ angular.module('Controllers').controller('EditController', ['$rootScope', '$rout
 		);
 
 		$scope.saveCall = function(){
-			//SalesforceContactCRUD.editContact($scope.model.contactId, $rootScope.myUsername, $rootScope.myToken,
-			SalesforceContactCRUD.editContact($scope.model.contactId, 'hola', 'hola', 
+			SalesforceContactCRUD.editContact($scope.model.contactId, $rootScope.myUsername, $rootScope.myToken,
 				$scope.model.title, $scope.model.phone, $scope.model.email).then(
-					function(response){ //response es true si todo bien, y si no anduvo da false
-						//PENDIENTE Mostrar un mensaje de éxito o mostrar el coso ya editado.
-						console.log(response);
+					function(response){
+						if (response == true) {
+							$location.path("home");
+						}
 					},
 					function(event){
 						console.log(event);

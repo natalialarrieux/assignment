@@ -5,16 +5,13 @@ angular.module('Directives')
         return {
             restrict: 'E',
             replace: false,
-            templateUrl: 'assets/templates/form-messages.html',
+            templateUrl: 'assets/templates/directives/form-messages.html',
             scope: {
-                messageGreen: "=",
-                messageRed: "=",
-                both: "=",
-                display: "=",
+                gored: "=",
                 red: "="
             },
             link: function(scope, element, attrs) {
-
+                
             }
         };
     }])

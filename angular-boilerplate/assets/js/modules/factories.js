@@ -5,3 +5,4 @@ angular.module('Factories', []);
 require('./factories/someFactory.js');
 require('./factories/SalesforceAuthentication.js');
 require('./factories/SalesforceContactCRUD.js');
+require('./factories/AccessFactory.js');

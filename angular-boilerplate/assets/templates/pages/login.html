@@ -12,21 +12,17 @@
                     <input ng-model="model.tempPass" type="password" placeholder="Password" class="form-control" required="true">
                 </fieldset>
 
-                 <form-messages messageGreen=""
-                           messageRed="The username or password provided are invalid."
-                           both="false"
-                           display="false"
-                           
-                ></form-messages> <!-- red="!loginForm.$valid" -->
+                 <form-messages
+                           gored="'The username or password provided are invalid.'"
+                           ng-show="loginForm.$submitted"
+                           red="!loginForm.$valid"
+                ></form-messages>
 
                 <fieldset class="form-group">
                 <input class="btn btn-primary btn-block" type="submit" name="log in" value="Login"/>
                 </fieldset>
-
-                <fieldset class="form-group">
-                    <a class="btn btn-block" ng-href="#/create">Register</a>
-                </fieldset>
             </form>
+            <a class="btn btn-block" ng-href="#/create">Register</a>
         </div>
     </div>
 </div>

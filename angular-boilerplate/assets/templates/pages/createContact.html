@@ -6,32 +6,31 @@
             <legend>Create a new contact!</legend>
 
             <fieldset class="form-group">
-                <input name="first name" type="text" ng-model="model.firstName" placeholder="First name" class="form-control" />
+                <input name="first name" type="text" ng-model="model.firstName" placeholder="First name" class="form-control" required="true"/>
             </fieldset>
             <fieldset class="form-group">
-                <input ng-model="model.lastName" type="text" placeholder="Last name" class="form-control" name="last name" />
+                <input ng-model="model.lastName" type="text" placeholder="Last name" class="form-control" name="last name" required="true"/>
             </fieldset>
             <fieldset class="form-group">
-                <input name="username" type="text" class="form-control" placeholder="Username" ng-model="model.username" />
+                <input name="username" type="text" class="form-control" placeholder="Username" ng-model="model.username" required="true"/>
             </fieldset>
             <fieldset class="form-group">
-                <input name="password" type="password" class="form-control" placeholder="Password" ng-model="model.password" />
+                <input name="password" type="password" class="form-control" placeholder="Password" ng-model="model.password" required="true"/>
             </fieldset>
             <fieldset class="form-group">
-                <input name="title" type="text"placeholder="Title" class="form-control" ng-model="model.title" />
+                <input name="title" type="text"placeholder="Title" class="form-control" ng-model="model.title" required="true"/>
             </fieldset>
             <fieldset class="form-group">
-                <input name="phone" type="text" placeholder="Phone" class="form-control" ng-model="model.phone" />
+                <input name="phone" type="text" placeholder="Phone" class="form-control" ng-model="model.phone"/>
             </fieldset>
             <fieldset class="form-group">
-                <input name="email" type="email" placeholder="E-mail" class="form-control" ng-model="model.email" />
+                <input name="email" type="email" placeholder="E-mail" class="form-control" ng-model="model.email"/>
             </fieldset>
 
-            <form-messages messageGreen="You now have a valid user. Go ahead and log in to the system!"
-                           messageRed="Your user couldn't be created. The next values provided aren't valid:"
-                           both="true"
-                           display="true"
+            <form-messages 
+                           gored="'Your user couldn´t be created. The next values provided aren´t valid:'"
                            red="!createForm.$valid"
+                           ng-show="createForm.$submitted"
             ></form-messages>
 
             <fieldset class="form-group">

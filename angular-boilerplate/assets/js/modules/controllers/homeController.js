@@ -6,10 +6,10 @@ angular.module('Controllers')
 			contacts: []
 		};
 
-	//	SalesforceContactCRUD.listUsers($rootScope.myUsername, $rootScope.myToken).then(
-		SalesforceContactCRUD.listUsers("hola", "hola").then( // PENDIENTE cambiar por lo que está arriba cuando ande el login
+		SalesforceContactCRUD.listUsers($rootScope.myUsername, $rootScope.myToken).then(
 			function(response){
 				$scope.model.contacts = response;
+				console.log(response);
 			},
 			function(event){
 				console.log(event);

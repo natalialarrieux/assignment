@@ -23,7 +23,7 @@
                 </fieldset>
 
                 <fieldset class="form-group">
-                    <input ng-model="model.title" name="title" type="text" placeholder="Contact's Title" class="form-control" />
+                    <input ng-model="model.title" name="title" type="text" placeholder="Contact's Title" class="form-control" required="true"/>
                 </fieldset>
                 <fieldset class="form-group">
                     <input ng-model="model.phone" type="text" placeholder="Phone" class="form-control" name="phone" />
@@ -32,18 +32,17 @@
                     <input ng-model="model.email" name="email" type="email" class="form-control" placeholder="E-mail" />
                 </fieldset>
 
-                <form-messages messageGreen="Your changes have been saved to the database."
-                           messageRed="Your changes couldn't be saved. The next values provided aren't valid:"
-                           both="true"
-                           display="true"
-                           red="!editForm.$valid"
+                <form-messages
+                gored="'Your changes couldn´t be saved. The next values provided aren´t valid:'"
+                ng-show="editForm.$submitted"
+                red="!editForm.$valid"
                 ></form-messages>
                 
                 <fieldset class="form-group">
                     <input class="btn btn-primary" type="submit" name="save your changes" value="Save changes" />
                 </fieldset>
-
             </form>
+            <a class="btn" ng-href="#/home">Cancel</a>
         </div>
     </div>
 </div>

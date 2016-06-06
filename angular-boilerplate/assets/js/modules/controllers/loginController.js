@@ -6,7 +6,7 @@ angular.module('Controllers')
 			/*Los defino como temporales y en el scope de la LoginController. 
 			Cuando se confirme que son valores válidos, los paso al $rootscope*/
 			tempUser: "",
-			tempPass: ""
+			tempPass: "",
 		};
 
 		$rootScope.myUsername = "";
@@ -21,8 +21,6 @@ angular.module('Controllers')
 						$scope.model.tempUser = ""; //Segundo: limpio las variables temporales
 						$scope.model.tempPass = "";
 						$location.path("home");//Tercero: ir a la view correspondiente a home.html
-					} else { //Caso negativo: usuario o password incorrecto
-						// Reutilization.setErrorMessage("The username or password are incorrect"); PENDIENTE esto lo voy a hacer con una directiva
 					}
 				},
 				function(event){

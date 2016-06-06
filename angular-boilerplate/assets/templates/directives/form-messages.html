@@ -1,40 +1,4 @@
-<!-- <div ng-if="{{display}} && {{!red}}" class="alert alert-danger" role="alert"> 
+<div ng-if="red" class="alert alert-danger" role="alert"> 
 	<p><strong>Sorry!</strong></p>
-	<p class="message">{{messageRed}}</p>      
-</div>
-
-<div ng-if="{{display}} && {{both}} && {{!red}}" class="alert alert-success" role="alert">
-	<p><strong>Great!</strong></p>
-	<p class="message">{{messageGreen}}</p>
-</div> -->
-
-
-<!-- <div class="alert alert-danger" role="alert"> 
-	<p><strong>Sorry!</strong></p>
-	<p class="message"></p>      
-</div>
-
-<div class="alert alert-success" role="alert">
-	<p><strong>Great!</strong></p>
-	<p class="message">You have successfully created a new user! Now go ahead and log in!</p>
-</div> -->
-
-<!-- <div ng-if="{{display}}" class="alert alert-danger" role="alert"> 
-	<p><strong>Sorry!</strong></p>
-	<p class="message">{{messageRed}}</p>      
-</div>
-
-<div ng-if="{{display}} && {{both}}" class="alert alert-success" role="alert">
-	<p><strong>Great!</strong></p>
-	<p class="message">{{messageGreen}}</p>
-</div> -->
-
-<div class="alert alert-danger" role="alert"> 
-	<p><strong>Sorry!</strong></p>
-	<p class="message">{{messageRed}}</p>      
-</div>
-
-<div class="alert alert-success" role="alert">
-	<p><strong>Great!</strong></p>
-	<p class="message">{{messageGreen}}</p>
+	<p class="message" ng-bind="gored"></p>      
 </div>
